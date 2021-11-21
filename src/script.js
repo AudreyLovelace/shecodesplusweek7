@@ -38,11 +38,13 @@ function nowDate() {
 
 function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
-  if ((temperature < 10) & (temperature > -10)) {
-    temperature = `0${temperature}`;
+  if ((temperature < 10) & (temperature >= 0)) {
+    h4.innerHTML = ` &nbsp${temperature}`;
+  } else {
+    h4.innerHTML = temperature;
   }
   h3.innerHTML = response.data.weather[0].description;
-  h4.innerHTML = temperature;
+
   h1.innerHTML = response.data.name;
   li2.innerHTML = Math.round(response.data.main.humidity);
   li3.innerHTML = Math.round(response.data.wind.speed);
@@ -50,7 +52,11 @@ function showWeather(response) {
   img.setAttribute("src", `http://openweathermap.org/img/wn/${iconid}@2x.png`);
   img.setAttribute("alt", response.data.weather[0].description);
   function celChange() {
-    h4.innerHTML = `${temperature}`;
+    if ((temperature < 10) & (temperature >= 0)) {
+      h4.innerHTML = ` &nbsp${temperature}`;
+    } else {
+      h4.innerHTML = temperature;
+    }
     cel.classList.add("spanChosed");
     far.classList.remove("spanChosed");
     far.classList.add("spanOrigin");
