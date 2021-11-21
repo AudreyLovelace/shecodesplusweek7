@@ -107,6 +107,7 @@ ul {
 
 .spanChosed {
   color: rgb(152, 55, 165);
+  text-decoration: underline;
 }
 
 #li1 {
