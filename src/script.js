@@ -114,3 +114,5 @@ function current1() {
   searchCity();
   city.value = null;
 }
+
+current1();
