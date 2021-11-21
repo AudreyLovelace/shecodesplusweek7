@@ -10,6 +10,7 @@ let button1 = document.querySelector("#button1");
 let button2 = document.querySelector("#button2");
 let li2 = document.querySelector("#li2>span");
 let li3 = document.querySelector("#li3>span");
+let img = document.querySelector("img");
 
 let days = [
   "Sunday",
@@ -45,6 +46,8 @@ function showWeather(response) {
   h1.innerHTML = response.data.name;
   li2.innerHTML = Math.round(response.data.main.humidity);
   li3.innerHTML = Math.round(response.data.wind.speed);
+  let iconid = response.data.weather[0].icon;
+  img.setAttribute("src", `http://openweathermap.org/img/wn/${iconid}@2x.png`);
   function celChange() {
     h4.innerHTML = `${temperature}`;
     cel.classList.add("spanChosed");
@@ -103,9 +106,11 @@ button1.addEventListener("click", h1city);
 button2.addEventListener("click", current);
 
 function current1() {
-  navigator.geolocation.getCurrentPosition(retrievePosition);
+  city.value = `new york`;
   cel.classList.add("spanChosed");
   far.classList.remove("spanChosed");
   far.classList.add("spanOrigin");
   nowDate();
+  searchCity();
+  city.value = null;
 }
