@@ -48,6 +48,7 @@ function showWeather(response) {
   li3.innerHTML = Math.round(response.data.wind.speed);
   let iconid = response.data.weather[0].icon;
   img.setAttribute("src", `http://openweathermap.org/img/wn/${iconid}@2x.png`);
+  img.setAttribute("alt", response.data.weather[0].description);
   function celChange() {
     h4.innerHTML = `${temperature}`;
     cel.classList.add("spanChosed");
