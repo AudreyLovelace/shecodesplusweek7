@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body onload="current1()">
+    <div>
+      <header>
+        <form>
+          <input id="city" type="search" placeholder="Type a city" />
+          <input id="button1" type="submit" value="Search" />
+          <input id="button2" type="submit" value="Current" />
+        </form>
+      </header>
+      <main>
+        <h1>Charlottetown PE, Canada</h1>
+        <h2>aaa</h2>
+        <h3>Partly Cloudy</h3>
+      </main>
+      <footer>
+        <img src="src/partly_cloudy.png" />
+        <h4>19</h4>
+        <h5>
+          <span id="cel">°C</span>
+          <strong>|</strong>
+          <span id="far">°F</span>
+        </h5>
+        <ul>
+          <li id="li1">Precipitation: 0%</li>
+          <li id="li2">Humidity: <span>77</span>%</li>
+          <li id="li3">Wind: <span>8</span> km/h</li>
+        </ul>
+      </footer>
+      <p>
+        <a href="https://github.com/AudreyLovelace/githubuse"
+          >Open source code,</a
+        >
+        by Audrey Lovelace
+      </p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

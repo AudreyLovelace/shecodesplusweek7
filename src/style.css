@@ -1,0 +1,127 @@
+* {
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.6);
+  border-style: none;
+}
+div {
+  width: 500px;
+  height: 215px;
+  margin: 20px auto;
+  padding: 30px;
+  border: rgba(180, 180, 180, 0.4);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+img,
+h4,
+h5,
+ul {
+  display: block;
+  float: left;
+}
+header {
+  margin-bottom: 20px;
+}
+#city {
+  height: 40px;
+  width: 230px;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: normal;
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color: rgb(199, 199, 199);
+  border-style: solid;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#button1,
+#button2 {
+  font-size: 20px;
+  color: white;
+
+  padding: 8px 15px;
+  border-radius: 30px;
+  margin-left: 10px;
+  transition: all 200ms ease-in-out;
+}
+#button1 {
+  background-color: rgb(64, 160, 224);
+}
+#button2 {
+  background-color: rgb(64, 224, 216);
+}
+#button2:hover {
+  background-color: rgb(26, 139, 134);
+  cursor: pointer;
+}
+#button1:hover {
+  background-color: rgb(28, 97, 143);
+  cursor: pointer;
+}
+main {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 90px;
+  margin-right: 20px;
+  margin-top: -15px;
+  opacity: 0;
+}
+
+h4 {
+  font-size: 60px;
+  color: rgb(48, 48, 48);
+  margin-top: -5px;
+}
+
+h5 {
+  font-size: 20px;
+}
+h5 strong {
+  margin: 0 -20px 0 -15px;
+}
+h5 span {
+  color: rgb(64, 160, 224);
+
+  padding: 5px;
+}
+h5 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.spanOrigin {
+  color: rgb(64, 160, 224);
+}
+
+.spanChosed {
+  color: rgb(152, 55, 165);
+}
+
+#li1 {
+  opacity: 0;
+}
+
+p {
+  font-size: 16px;
+  display: block;
+  width: 1000px;
+  position: relative;
+  left: -480px;
+  top: 100px;
+}
+p a {
+  color: rgb(64, 160, 224);
+}
